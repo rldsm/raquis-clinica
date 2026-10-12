@@ -184,23 +184,26 @@
           <section class="section">
             <div class="wrap">
               <div class="section-head center">
-                <p class="kicker">Especialidades</p>
-                <h2>Encuentra la atención adecuada para tu caso</h2>
-                <p>La quiropráctica es nuestra atención principal. Kinesiología y masoterapia pueden complementar el proceso cuando corresponde.</p>
+                <p class="kicker">Tu primera sesión</p>
+                <h2>Sabes qué haremos desde el primer día</h2>
+                <p>En tu primera visita realizamos una evaluación clínica y, si corresponde a tu caso, comenzamos el tratamiento en esa misma sesión.</p>
               </div>
               <div class="specialty-grid">
+                <article class="specialty-card">
+                  <div class="specialty-media">FOTO EVALUACIÓN CLÍNICA</div>
+                  <div class="specialty-body"><span class="specialty-tag">PASO 1</span><h3>Conocemos tu caso</h3><p>Revisamos tus síntomas, antecedentes e historial clínico para entender el motivo de consulta.</p></div>
+                </article>
+                <article class="specialty-card">
+                  <div class="specialty-media">FOTO EVALUACIÓN DE MOVILIDAD</div>
+                  <div class="specialty-body"><span class="specialty-tag">PASO 2</span><h3>Evaluamos tu movilidad</h3><p>Realizamos las pruebas clínicas y funcionales necesarias según tu caso.</p></div>
+                </article>
                 <article class="specialty-card primary">
-                  <div class="specialty-media">FOTO QUIROPRÁCTICA</div>
-                  <div class="specialty-body"><span class="specialty-tag">ATENCIÓN PRINCIPAL</span><h3>Quiropráctica</h3><p>Para molestias musculoesqueléticas, movilidad y evaluación del sistema musculoesquelético mediante un enfoque manual y conservador.</p><a class="btn btn-primary" href="${this.specialtyUrl('quiropractica')}">AGENDAR EVALUACIÓN</a></div>
+                  <div class="specialty-media">FOTO TRATAMIENTO QUIROPRÁCTICO</div>
+                  <div class="specialty-body"><span class="specialty-tag">PASO 3</span><h3>Definimos qué necesitas</h3><p>Determinamos si la quiropráctica es adecuada para ti y, si corresponde, iniciamos el tratamiento ese mismo día.</p></div>
                 </article>
-                <article class="specialty-card">
-                  <div class="specialty-media">FOTO KINESIOLOGÍA</div>
-                  <div class="specialty-body"><h3>Kinesiología</h3><p>Puede apoyar procesos de recuperación, movilidad, ejercicio terapéutico y terapia manual.</p><a class="btn btn-secondary" href="${this.specialtyUrl('kinesiologia')}">VER DISPONIBILIDAD</a></div>
-                </article>
-                <article class="specialty-card">
-                  <div class="specialty-media">FOTO MASOTERAPIA</div>
-                  <div class="specialty-body"><h3>Masoterapia</h3><p>Atención complementaria orientada a tensión muscular y bienestar corporal.</p><a class="btn btn-secondary" href="${this.specialtyUrl('masoterapia')}">VER DISPONIBILIDAD</a></div>
-                </article>
+              </div>
+              <div style="display:flex;justify-content:center;margin-top:20px">
+                <a class="btn btn-primary" href="${this.bookingUrl()}">AGENDAR PRIMERA SESIÓN</a>
               </div>
             </div>
           </section>
