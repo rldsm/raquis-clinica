@@ -273,7 +273,7 @@
               <div class="clinic-grid">
                 <article class="clinic-card">
                   <div class="clinic-media">FOTO SANTIAGO CENTRO</div>
-                  <div class="clinic-body"><h3>Santiago Centro</h3><p>Nueva York 57, Of. 603 · Metro Universidad de Chile.</p><p>Horario y especialidades: por completar.</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Nueva+York+57+Oficina+603+Santiago+Centro+Chile" target="_blank" rel="noopener noreferrer">VER EN MAPS</a><a class="btn btn-primary" href="${this.specialtyUrl('santiago')}">AGENDAR AQUÍ</a></div></div>
+                  <div class="clinic-body"><h3>Santiago Centro</h3><p>Nueva York 57, Of. 603 · Metro Universidad de Chile.</p><p><strong>Horario:</strong><br>Lunes a viernes: 8:30 a 19:30<br>Sábado: 9:00 a 13:00<br>Domingo: cerrado</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Nueva+York+57+Oficina+603+Santiago+Centro+Chile" target="_blank" rel="noopener noreferrer">VER EN MAPS</a><a class="btn btn-primary" href="${this.specialtyUrl('santiago')}">AGENDAR AQUÍ</a></div></div>
                 </article>
                 <article class="clinic-card">
                   <div class="clinic-media">FOTO PROVIDENCIA</div>
