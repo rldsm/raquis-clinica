@@ -88,8 +88,12 @@
           .quick-item:nth-child(odd){border-right:1px solid var(--line)}.quick-item:nth-child(-n+2){border-bottom:1px solid var(--line)}
           .quick-item strong{display:block;color:var(--orange);font-size:1.2rem;line-height:1}.quick-item span{display:block;margin-top:6px;color:var(--muted);font-size:.76rem;line-height:1.25}
 
-          .specialty-grid{display:grid;gap:14px}
-          .specialty-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+          .first-session-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+          .first-session-tab{min-height:42px;border:1px solid var(--line);border-radius:8px;background:#fff;color:var(--ink);font:inherit;font-size:.78rem;font-weight:800;cursor:pointer}
+          .first-session-tab[aria-selected="true"]{background:var(--orange);border-color:var(--orange);color:#fff}
+          .specialty-grid{display:block}
+          .specialty-card{display:none;border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+          .specialty-card.is-active{display:block}
           .specialty-media{min-height:220px;background:#f2e8e2;display:grid;place-items:center;text-align:center;color:#927c71;font-size:.8rem}
           .specialty-body{padding:20px}
           .specialty-body h3{margin:0 0 7px;font-size:1.2rem}
@@ -143,7 +147,9 @@
             .hero-actions,.final-actions{display:flex}.btn{width:auto;min-width:168px}
             .quick-panel{grid-template-columns:repeat(4,1fr);margin:-72px 28px 0}
             .quick-item{border-bottom:0!important;border-right:1px solid var(--line)!important}.quick-item:last-child{border-right:0!important}
-            .specialty-grid{grid-template-columns:repeat(3,1fr)}
+            .first-session-tabs{display:none}
+            .specialty-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+            .specialty-card{display:block}
             .process{grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
             .team-grid{grid-auto-flow:initial;grid-auto-columns:auto;grid-template-columns:repeat(2,1fr);overflow:visible;padding:0}
             .video-grid{grid-auto-flow:initial;grid-auto-columns:auto;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;padding:0}
@@ -189,16 +195,21 @@
                 <h2>Sabes qué haremos desde el primer día</h2>
                 <p>En tu primera visita realizamos una evaluación clínica y, si corresponde a tu caso, comenzamos el tratamiento en esa misma sesión.</p>
               </div>
+              <div class="first-session-tabs" role="tablist" aria-label="Etapas de la primera sesión">
+                <button class="first-session-tab" type="button" role="tab" aria-selected="true" data-step-tab="0">Paso 1</button>
+                <button class="first-session-tab" type="button" role="tab" aria-selected="false" data-step-tab="1">Paso 2</button>
+                <button class="first-session-tab" type="button" role="tab" aria-selected="false" data-step-tab="2">Paso 3</button>
+              </div>
               <div class="specialty-grid">
-                <article class="specialty-card">
+                <article class="specialty-card is-active" data-step-panel="0">
                   <div class="specialty-media">FOTO EVALUACIÓN CLÍNICA</div>
                   <div class="specialty-body"><span class="specialty-tag">PASO 1</span><h3>Conocemos tu caso</h3><p>Revisamos tus síntomas, antecedentes e historial clínico para entender el motivo de consulta.</p></div>
                 </article>
-                <article class="specialty-card">
+                <article class="specialty-card" data-step-panel="1">
                   <div class="specialty-media">FOTO EVALUACIÓN DE MOVILIDAD</div>
                   <div class="specialty-body"><span class="specialty-tag">PASO 2</span><h3>Evaluamos tu movilidad</h3><p>Realizamos las pruebas clínicas y funcionales necesarias según tu caso.</p></div>
                 </article>
-                <article class="specialty-card primary">
+                <article class="specialty-card primary" data-step-panel="2">
                   <div class="specialty-media">FOTO TRATAMIENTO QUIROPRÁCTICO</div>
                   <div class="specialty-body"><span class="specialty-tag">PASO 3</span><h3>Definimos qué necesitas</h3><p>Determinamos si la quiropráctica es adecuada para ti y, si corresponde, iniciamos el tratamiento ese mismo día.</p></div>
                 </article>
@@ -386,6 +397,17 @@
     }
 
     bind() {
+      const stepTabs = Array.from(this.querySelectorAll('[data-step-tab]'));
+      const stepPanels = Array.from(this.querySelectorAll('[data-step-panel]'));
+
+      stepTabs.forEach(tab => {
+        tab.addEventListener('click', () => {
+          const index = tab.dataset.stepTab;
+          stepTabs.forEach(item => item.setAttribute('aria-selected', item === tab ? 'true' : 'false'));
+          stepPanels.forEach(panel => panel.classList.toggle('is-active', panel.dataset.stepPanel === index));
+        });
+      });
+
       this.querySelectorAll('.js-scroll').forEach(link => {
         link.addEventListener('click', event => {
           const targetId = link.dataset.target;
