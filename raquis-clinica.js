@@ -66,9 +66,9 @@
           .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
           .section-head h2{margin:0 0 10px;font-size:clamp(2rem,9vw,3.35rem);line-height:1.03;letter-spacing:-.045em}
           .section-head p{margin:0;color:var(--muted);font-size:1rem;line-height:1.6}
-          .btn{min-height:52px;padding:0 18px;border-radius:12px;display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;font-size:.9rem;font-weight:850}
-          .btn-primary{background:var(--orange);color:#fff}.btn-primary:hover{background:var(--orange-dark)}
-          .btn-secondary{background:#fff;border:1px solid #e3cfc3;color:var(--orange)}
+          .btn{min-height:44px;padding:0 16px;border-radius:8px;display:flex;align-items:center;justify-content:center;text-align:center;text-decoration:none;font-size:.82rem;font-weight:750;letter-spacing:.01em;transition:background .18s ease,border-color .18s ease,color .18s ease}
+          .btn-primary{background:var(--orange);color:#fff;border:1px solid var(--orange)}.btn-primary:hover{background:var(--orange-dark);border-color:var(--orange-dark)}
+          .btn-secondary{background:transparent;border:1px solid #ddcfc6;color:var(--ink)}.btn-secondary:hover{border-color:#cdb8ab;color:var(--orange)}
 
           .hero{padding:28px 0 0;background:linear-gradient(180deg,#fff 0%,var(--cream) 100%)}
           .hero-card{min-height:520px;border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(135deg,#f2e7e0,#fff);border:1px solid var(--line)}
@@ -139,7 +139,7 @@
           @media(min-width:720px){
             .wrap{width:min(100% - 48px,1180px)}
             .hero-content{padding:44px 44px 126px}
-            .hero-actions,.final-actions{display:flex}.btn{width:auto;min-width:190px}
+            .hero-actions,.final-actions{display:flex}.btn{width:auto;min-width:168px}
             .quick-panel{grid-template-columns:repeat(4,1fr);margin:-72px 28px 0}
             .quick-item{border-bottom:0!important;border-right:1px solid var(--line)!important}.quick-item:last-child{border-right:0!important}
             .specialty-grid{grid-template-columns:repeat(3,1fr)}
