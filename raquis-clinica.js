@@ -105,7 +105,7 @@
           .team-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(82%,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;overscroll-behavior-inline:contain}
           .team-grid::-webkit-scrollbar{height:6px}.team-grid::-webkit-scrollbar-thumb{background:#dccbc1;border-radius:999px}
           .person-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;scroll-snap-align:start}
-          .person-media{min-height:260px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem}
+          .person-media{min-height:260px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem;overflow:hidden}.person-media img{display:block;width:100%;height:100%;min-height:260px;aspect-ratio:4/5;object-fit:cover;object-position:center top}
           .person-body{padding:18px}.person-body h3{margin:0 0 5px;font-size:1.08rem}.person-body p{margin:0;color:var(--muted);line-height:1.48;font-size:.9rem}
           .person-body .btn{margin-top:14px;width:100%}
 
@@ -266,7 +266,7 @@
                 <p>Conoce al equipo que realiza las atenciones de quiropráctica en Raquis.</p>
               </div>
               <div class="team-grid">
-                <article class="person-card"><div class="person-media">FOTO ALFREDO DUTILH</div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ALFREDO</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/alfredo1.jpg" alt="Alfredo Dutilh" loading="lazy" decoding="async"></div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ALFREDO</a></div></article>
                 <article class="person-card"><div class="person-media">FOTO CARLOS BUSTOS</div><div class="person-body"><h3>Carlos Bustos U.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CARLOS</a></div></article>
                 <article class="person-card"><div class="person-media">FOTO CRISTIAN RODRIGUEZ</div><div class="person-body"><h3>Cristian Rodriguez A.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CRISTIAN</a></div></article>
                 <article class="person-card"><div class="person-media">FOTO FRANK GAETE</div><div class="person-body"><h3>Frank Gaete S.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON FRANK</a></div></article>
