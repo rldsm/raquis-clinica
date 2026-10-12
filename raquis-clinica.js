@@ -4,7 +4,6 @@
   class RaquisClinica extends HTMLElement {
     constructor() {
       super();
-      this.attachShadow({ mode: 'open' });
     }
 
     connectedCallback() {
@@ -48,9 +47,10 @@
     }
 
     render() {
-      this.shadowRoot.innerHTML = `
+      this.innerHTML = `
         <style>
-          :host{
+          @scope (raquis-clinica) {
+          :scope{
             --orange:#E84A05;--orange-dark:#C83D00;--ink:#241F1D;--muted:#6D655F;--line:#E9DED7;
             --soft:#FBF7F4;--cream:#FFF9F5;
             display:block;background:#fff;color:var(--ink);text-align:left;
@@ -118,7 +118,7 @@
           .video-body{padding:16px}.video-body strong{display:block}.video-body span{display:block;margin-top:4px;color:var(--muted);font-size:.86rem}
 
           .reviews-frame{min-height:190px;border:1px solid var(--line);border-radius:18px;background:#fff;padding:16px;box-shadow:0 10px 30px rgba(57,39,29,.05)}
-          ::slotted([slot="google-reviews"]){display:block;width:100%}.reviews-loading{min-height:150px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem}
+          [slot="google-reviews"]{display:block;width:100%}.reviews-loading{min-height:150px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem}
 
           .clinic-grid{display:grid;gap:14px}
           .clinic-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
@@ -154,6 +154,7 @@
             .hero{padding-top:38px}.hero-card{min-height:580px}.hero-content{min-height:580px;padding:64px 64px 138px}.hero h1{font-size:4.8rem}
             .section{padding:72px 0}
             .team-grid{grid-template-columns:repeat(4,1fr)}
+          }
           }
         </style>
 
@@ -297,7 +298,7 @@
                 <h2>Lo que dicen nuestros pacientes</h2>
                 <p>Reseñas reales y verificables de pacientes de Raquis.</p>
               </div>
-              <div class="reviews-frame"><slot name="google-reviews"><div class="reviews-loading">Cargando reseñas de Google…</div></slot></div>
+              <div class="reviews-frame"><div class="reviews-loading">Cargando reseñas de Google…</div></div>
             </div>
           </section>
 
@@ -353,7 +354,7 @@
     }
 
     shuffleProfessionals() {
-      const grid = this.shadowRoot.querySelector('.team-grid');
+      const grid = this.querySelector('.team-grid');
       if (!grid) return;
 
       const cards = Array.from(grid.children);
@@ -367,8 +368,11 @@
     mountGoogleReviews() {
       if (this.querySelector('[data-raquis-google-reviews]')) return;
 
+      const frame = this.querySelector('.reviews-frame');
+      if (!frame) return;
+      frame.innerHTML = '';
+
       const host = document.createElement('div');
-      host.setAttribute('slot', 'google-reviews');
       host.setAttribute('data-raquis-google-reviews', '');
       host.style.width = '100%';
 
@@ -378,14 +382,14 @@
       script.async = true;
 
       host.appendChild(script);
-      this.appendChild(host);
+      frame.appendChild(host);
     }
 
     bind() {
-      this.shadowRoot.querySelectorAll('.js-scroll').forEach(link => {
+      this.querySelectorAll('.js-scroll').forEach(link => {
         link.addEventListener('click', event => {
           const targetId = link.dataset.target;
-          const target = targetId ? this.shadowRoot.getElementById(targetId) : null;
+          const target = targetId ? this.querySelector('#' + CSS.escape(targetId)) : null;
           if (!target) return;
           event.preventDefault();
           target.scrollIntoView({ behavior:'smooth', block:'start' });
