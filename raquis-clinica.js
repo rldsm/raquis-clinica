@@ -228,12 +228,12 @@
                 <p>Conoce al equipo que realiza las atenciones de quiropráctica en Raquis.</p>
               </div>
               <div class="team-grid">
-                <article class="person-card"><div class="person-media">FOTO ALFREDO DUTILH</div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo · Director Clínico.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ALFREDO</a></div></article>
-                <article class="person-card"><div class="person-media">FOTO CARLOS BUSTOS</div><div class="person-body"><h3>Carlos Bustos U.</h3><p>Quiropráctico y Kinesiólogo · Jefe de Clínica Providencia.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CARLOS</a></div></article>
-                <article class="person-card"><div class="person-media">FOTO CRISTIAN RODRIGUEZ</div><div class="person-body"><h3>Cristian Rodriguez A.</h3><p>Quiropráctico y Kinesiólogo · Jefe de Quiropráctica.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CRISTIAN</a></div></article>
-                <article class="person-card"><div class="person-media">FOTO FRANK GAETE</div><div class="person-body"><h3>Frank Gaete S.</h3><p>Quiropráctico.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON FRANK</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO ALFREDO DUTILH</div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ALFREDO</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO CARLOS BUSTOS</div><div class="person-body"><h3>Carlos Bustos U.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CARLOS</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO CRISTIAN RODRIGUEZ</div><div class="person-body"><h3>Cristian Rodriguez A.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CRISTIAN</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO FRANK GAETE</div><div class="person-body"><h3>Frank Gaete S.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON FRANK</a></div></article>
                 <article class="person-card"><div class="person-media">FOTO PAZ GRIFFEROS</div><div class="person-body"><h3>Paz Grifferos R.</h3><p>Quiropráctica y Kinesióloga.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON PAZ</a></div></article>
-                <article class="person-card"><div class="person-media">FOTO RITA CABALLERO</div><div class="person-body"><h3>Rita Caballero P.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON RITA</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO RITA CABALLERO</div><div class="person-body"><h3>Rita Caballero P.</h3><p>Quiropráctica y Kinesióloga.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON RITA</a></div></article>
               </div>
             </div>
           </section>
