@@ -174,7 +174,7 @@
                   <h1>Quiropráctica para volver a moverte mejor</h1>
                   <p class="hero-lead">Evaluamos tu caso y definimos una atención personalizada según tus necesidades.</p>
                   <div class="hero-actions">
-                    <a class="btn btn-primary" href="${this.bookingUrl()}">AGENDAR HORA</a>
+                    <a class="btn btn-primary" href="${this.bookingUrl()}">Agendar hora</a>
                   </div>
                   <p class="hero-note">Evaluación + tratamiento desde la primera sesión, si corresponde a tu caso.</p>
                 </div>
@@ -215,7 +215,7 @@
                 </article>
               </div>
               <div style="display:flex;justify-content:center;margin-top:20px">
-                <a class="btn btn-primary" href="${this.bookingUrl()}">AGENDAR PRIMERA SESIÓN</a>
+                <a class="btn btn-primary" href="${this.bookingUrl()}">Agendar primera sesión</a>
               </div>
             </div>
           </section>
@@ -279,12 +279,12 @@
                 <p>Conoce al equipo que realiza las atenciones de quiropráctica en Raquis.</p>
               </div>
               <div class="team-grid">
-                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/alfredo1.jpg" alt="Alfredo Dutilh" loading="lazy" decoding="async"></div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/alfredo-dutilh/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ALFREDO</a></div></article>
-                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2017/12/bustos_1-e1514397423901.jpg" alt="Carlos Bustos" loading="lazy" decoding="async"></div><div class="person-body"><h3>Carlos Bustos U.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/carlos-bustos/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CARLOS</a></div></article>
-                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/cristin-rodriguez.jpeg" alt="Cristian Rodriguez" loading="lazy" decoding="async"></div><div class="person-body"><h3>Cristian Rodriguez A.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/cristian-rodriguez/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CRISTIAN</a></div></article>
-                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/frank-gaete.jpg" alt="Frank Gaete" loading="lazy" decoding="async"></div><div class="person-body"><h3>Frank Gaete S.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/frank-gaete-sanz/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON FRANK</a></div></article>
-                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/paz-griffers.jpg" alt="Paz Grifferos" loading="lazy" decoding="async"></div><div class="person-body"><h3>Paz Grifferos R.</h3><p>Quiropráctica y Kinesióloga.</p><a class="profile-link" href="https://raquischile.cl/perfil/paz-grifferos/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON PAZ</a></div></article>
-                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/raquis-rita-caballero.jpg" alt="Rita Caballero" loading="lazy" decoding="async"></div><div class="person-body"><h3>Rita Caballero P.</h3><p>Quiropráctica y Kinesióloga.</p><a class="profile-link" href="https://raquischile.cl/perfil/rita-caballero-peric/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON RITA</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/alfredo1.jpg" alt="Alfredo Dutilh" loading="lazy" decoding="async"></div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/alfredo-dutilh/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">Agendar con Alfredo</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2017/12/bustos_1-e1514397423901.jpg" alt="Carlos Bustos" loading="lazy" decoding="async"></div><div class="person-body"><h3>Carlos Bustos U.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/carlos-bustos/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">Agendar con Carlos</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/cristin-rodriguez.jpeg" alt="Cristian Rodriguez" loading="lazy" decoding="async"></div><div class="person-body"><h3>Cristian Rodriguez A.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/cristian-rodriguez/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">Agendar con Cristian</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/frank-gaete.jpg" alt="Frank Gaete" loading="lazy" decoding="async"></div><div class="person-body"><h3>Frank Gaete S.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="profile-link" href="https://raquischile.cl/perfil/frank-gaete-sanz/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">Agendar con Frank</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/paz-griffers.jpg" alt="Paz Grifferos" loading="lazy" decoding="async"></div><div class="person-body"><h3>Paz Grifferos R.</h3><p>Quiropráctica y Kinesióloga.</p><a class="profile-link" href="https://raquischile.cl/perfil/paz-grifferos/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">Agendar con Paz</a></div></article>
+                <article class="person-card"><div class="person-media"><img src="https://raquischile.cl/assets/uploads/2022/05/raquis-rita-caballero.jpg" alt="Rita Caballero" loading="lazy" decoding="async"></div><div class="person-body"><h3>Rita Caballero P.</h3><p>Quiropráctica y Kinesióloga.</p><a class="profile-link" href="https://raquischile.cl/perfil/rita-caballero-peric/" target="_blank" rel="noopener noreferrer">Ver perfil</a><a class="btn btn-secondary" href="${this.bookingUrl()}">Agendar con Rita</a></div></article>
               </div>
             </div>
           </section>
@@ -323,11 +323,11 @@
               <div class="clinic-grid">
                 <article class="clinic-card">
                   <div class="clinic-media">FOTO SANTIAGO CENTRO</div>
-                  <div class="clinic-body"><h3>Santiago Centro</h3><p>Nueva York 57, Of. 603 · Metro Universidad de Chile.</p><p><strong>Horario:</strong><br>Lunes a viernes: 8:30 a 19:30<br>Sábado: 9:00 a 13:00<br>Domingo: cerrado</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Nueva+York+57+Oficina+603+Santiago+Centro+Chile" target="_blank" rel="noopener noreferrer">VER EN MAPS</a><a class="btn btn-primary" href="${this.specialtyUrl('santiago')}">AGENDAR AQUÍ</a></div></div>
+                  <div class="clinic-body"><h3>Santiago Centro</h3><p>Nueva York 57, Of. 603 · Metro Universidad de Chile.</p><p><strong>Horario:</strong><br>Lunes a viernes: 8:30 a 19:30<br>Sábado: 9:00 a 13:00<br>Domingo: cerrado</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Nueva+York+57+Oficina+603+Santiago+Centro+Chile" target="_blank" rel="noopener noreferrer">Ver en Maps</a><a class="btn btn-primary" href="${this.specialtyUrl('santiago')}">Agendar aquí</a></div></div>
                 </article>
                 <article class="clinic-card">
                   <div class="clinic-media">FOTO PROVIDENCIA</div>
-                  <div class="clinic-body"><h3>Providencia</h3><p>Dr. Manuel Barros Borgoño 71, Of. 806 · Metro Manuel Montt.</p><p><strong>Horario:</strong><br>Lunes a viernes: 8:30 a 19:30<br>Sábado: 9:00 a 16:00<br>Domingo: cerrado</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Dr+Manuel+Barros+Borgono+71+Oficina+806+Providencia+Chile" target="_blank" rel="noopener noreferrer">VER EN MAPS</a><a class="btn btn-primary" href="${this.specialtyUrl('providencia')}">AGENDAR AQUÍ</a></div></div>
+                  <div class="clinic-body"><h3>Providencia</h3><p>Dr. Manuel Barros Borgoño 71, Of. 806 · Metro Manuel Montt.</p><p><strong>Horario:</strong><br>Lunes a viernes: 8:30 a 19:30<br>Sábado: 9:00 a 16:00<br>Domingo: cerrado</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Dr+Manuel+Barros+Borgono+71+Oficina+806+Providencia+Chile" target="_blank" rel="noopener noreferrer">Ver en Maps</a><a class="btn btn-primary" href="${this.specialtyUrl('providencia')}">Agendar aquí</a></div></div>
                 </article>
               </div>
             </div>
@@ -355,8 +355,8 @@
               <h2>Agenda tu hora en Raquis</h2>
               <p>La reserva se realiza directamente en Medilink. Si tienes dudas antes de reservar, puedes escribirnos por WhatsApp.</p>
               <div class="final-actions">
-                <a class="btn btn-primary" href="${this.bookingUrl()}">AGENDAR HORA EN MEDILINK</a>
-                <a class="btn btn-secondary" href="${this.whatsappUrl()}">HABLAR POR WHATSAPP</a>
+                <a class="btn btn-primary" href="${this.bookingUrl()}">Agendar hora en Medilink</a>
+                <a class="btn btn-secondary" href="${this.whatsappUrl()}">Hablar por WhatsApp</a>
               </div>
             </div>
           </section>
