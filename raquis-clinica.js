@@ -167,7 +167,6 @@
                   <p class="hero-lead">Evaluamos tu caso y definimos una atención personalizada según tus necesidades.</p>
                   <div class="hero-actions">
                     <a class="btn btn-primary" href="${this.bookingUrl()}">AGENDAR HORA</a>
-                    <a class="btn btn-secondary" href="${this.whatsappUrl()}">HABLAR POR WHATSAPP</a>
                   </div>
                   <p class="hero-note">Evaluación + tratamiento desde la primera sesión, si corresponde a tu caso.</p>
                 </div>
