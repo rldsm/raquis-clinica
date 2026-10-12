@@ -102,12 +102,12 @@
           .step-num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff0e8;color:var(--orange);font-weight:900}
           .step h3{margin:1px 0 4px;font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.91rem;line-height:1.48}
 
-          .team-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(82%,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;overscroll-behavior-inline:contain}
+          .team-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(68%,1fr);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 10px;overscroll-behavior-inline:contain}
           .team-grid::-webkit-scrollbar{height:6px}.team-grid::-webkit-scrollbar-thumb{background:#dccbc1;border-radius:999px}
           .person-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;scroll-snap-align:start}
-          .person-media{min-height:260px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem;overflow:hidden}.person-media img{display:block;width:100%;height:100%;min-height:260px;aspect-ratio:4/5;object-fit:cover;object-position:center top}
-          .person-body{padding:18px}.person-body h3{margin:0 0 5px;font-size:1.08rem}.person-body p{margin:0;color:var(--muted);line-height:1.48;font-size:.9rem}
-          .person-body .btn{margin-top:14px;width:100%}
+          .person-media{min-height:210px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem;overflow:hidden}.person-media img{display:block;width:100%;height:100%;min-height:210px;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+          .person-body{padding:14px}.person-body h3{margin:0 0 4px;font-size:1rem}.person-body p{margin:0;color:var(--muted);line-height:1.42;font-size:.84rem}
+          .person-body .btn{margin-top:12px;width:100%;min-height:40px;font-size:.76rem}
 
           .video-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(72%,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;overscroll-behavior-inline:contain}
           .video-grid::-webkit-scrollbar{height:6px}.video-grid::-webkit-scrollbar-thumb{background:#dccbc1;border-radius:999px}
@@ -152,7 +152,7 @@
           @media(min-width:980px){
             .hero{padding-top:38px}.hero-card{min-height:580px}.hero-content{min-height:580px;padding:64px 64px 138px}.hero h1{font-size:4.8rem}
             .section{padding:72px 0}
-            .team-grid{grid-template-columns:repeat(3,1fr)}
+            .team-grid{grid-template-columns:repeat(4,1fr)}
           }
         </style>
 
