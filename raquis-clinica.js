@@ -9,6 +9,7 @@
 
     connectedCallback() {
       this.render();
+      this.shuffleProfessionals();
       this.bind();
       this.mountGoogleReviews();
       if (!this.hasAttribute('contained')) {
@@ -349,6 +350,18 @@
           </section>
         </main>
       `;
+    }
+
+    shuffleProfessionals() {
+      const grid = this.shadowRoot.querySelector('.team-grid');
+      if (!grid) return;
+
+      const cards = Array.from(grid.children);
+      for (let i = cards.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [cards[i], cards[j]] = [cards[j], cards[i]];
+      }
+      cards.forEach(card => grid.appendChild(card));
     }
 
     mountGoogleReviews() {
