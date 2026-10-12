@@ -107,8 +107,7 @@
           /* Services like highlighted specialties in reference */
           .service-grid{display:grid;gap:14px}
           .service-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
-          .service-card.main{border-color:#efc1aa}
-          .service-media{min-height:220px;background:#f2e8e2;display:grid;place-items:center;text-align:center;color:#927c71;font-size:.8rem}
+          .service-media{min-height:240px;background:#f2e8e2;display:grid;place-items:center;text-align:center;color:#927c71;font-size:.8rem}
           .service-body{padding:20px}
           .service-body h3{margin:0 0 8px;font-size:1.25rem}
           .service-body p{margin:0;color:var(--muted);line-height:1.52;font-size:.93rem}
@@ -165,8 +164,7 @@
             .quick-item{border-bottom:0!important;border-right:1px solid var(--line)!important}
             .quick-item:last-child{border-right:0!important}
             .symptom-scroll{grid-template-columns:repeat(4,1fr)}
-            .service-grid{grid-template-columns:2fr 1fr 1fr}
-            .service-card.main .service-media{min-height:320px}
+            .service-grid{grid-template-columns:repeat(2,1fr)}
             .reason-grid{grid-template-columns:repeat(3,1fr);gap:24px}
             .reason{border-top:0;border-left:1px solid var(--line);padding:0 0 0 24px}
             .reason:first-child{border-left:0;padding-left:0}
@@ -247,22 +245,18 @@
           <section class="section">
             <div class="wrap">
               <div class="section-head center">
-                <p class="kicker">Nuestro modelo de atención</p>
-                <h2>Quiropráctica como atención principal</h2>
-                <p>La quiropráctica es el eje de nuestro modelo de atención. Kinesiología y masoterapia pueden complementar el proceso cuando cada caso lo requiere.</p>
+                <p class="kicker">Atenciones complementarias</p>
+                <h2>Cuando tu caso necesita un apoyo adicional</h2>
+                <p>Según la evaluación, podemos complementar el proceso con kinesiología o masoterapia.</p>
               </div>
               <div class="service-grid">
-                <article class="service-card main">
-                  <div class="service-media">FOTO QUIROPRÁCTICA</div>
-                  <div class="service-body"><span class="service-tag">ATENCIÓN PRINCIPAL</span><h3>Quiropráctica</h3><p>Evaluación individual, técnicas manuales y ajustes específicos según las necesidades de cada paciente.</p></div>
-                </article>
                 <article class="service-card">
                   <div class="service-media">FOTO KINESIOLOGÍA</div>
-                  <div class="service-body"><h3>Kinesiología</h3><p>Atención complementaria que puede apoyar el proceso con movilidad, ejercicio terapéutico y terapia manual.</p></div>
+                  <div class="service-body"><h3>Kinesiología</h3><p>Puede apoyar el proceso con movilidad, ejercicio terapéutico y terapia manual, según cada caso.</p></div>
                 </article>
                 <article class="service-card">
                   <div class="service-media">FOTO MASOTERAPIA</div>
-                  <div class="service-body"><h3>Masoterapia</h3><p>Atención complementaria orientada a trabajar tensión muscular y bienestar corporal.</p></div>
+                  <div class="service-body"><h3>Masoterapia</h3><p>Puede complementar la atención trabajando tensión muscular y bienestar corporal.</p></div>
                 </article>
               </div>
             </div>
