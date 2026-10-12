@@ -122,17 +122,17 @@
           .reason p{margin:0;color:var(--muted);line-height:1.54;font-size:.92rem}
 
           /* Dark institutional section inspired by reference */
-          .about-dark{padding:54px 0;background:var(--dark);color:#fff}
+          .about-dark{padding:54px 0;background:linear-gradient(180deg,#E84A05 0%,#D94300 100%);color:#fff}
           .about-grid{display:grid;gap:28px}
           .about-collage{display:grid;grid-template-columns:1fr 1fr;gap:10px}
-          .about-photo{min-height:150px;border-radius:14px;background:#3b332f;display:grid;place-items:center;text-align:center;color:#cbbdb5;font-size:.75rem}
+          .about-photo{min-height:150px;border-radius:14px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);display:grid;place-items:center;text-align:center;color:#fff3ec;font-size:.75rem}
           .about-photo.large{grid-row:span 2;min-height:310px}
           .about-copy h2{margin:0 0 12px;font-size:clamp(2rem,9vw,3.2rem);line-height:1.04;letter-spacing:-.04em}
-          .about-copy p{margin:0;color:#d6cdc8;line-height:1.6}
+          .about-copy p{margin:0;color:#fff0e8;line-height:1.6}
           .about-points{margin-top:20px;display:grid;gap:10px}
-          .about-point{padding:14px 0;border-top:1px solid #493f3a}
+          .about-point{padding:14px 0;border-top:1px solid rgba(255,255,255,.22)}
           .about-point strong{display:block;margin-bottom:4px}
-          .about-point span{color:#cfc5bf;font-size:.9rem;line-height:1.45}
+          .about-point span{color:#fff0e8;font-size:.9rem;line-height:1.45}
 
           /* Reviews / team */
           .reviews-frame{min-height:190px;border:1px solid var(--line);border-radius:18px;background:#fff;padding:16px;box-shadow:0 10px 30px rgba(57,39,29,.05)}::slotted([slot="google-reviews"]){display:block;width:100%}.reviews-loading{min-height:150px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem}
