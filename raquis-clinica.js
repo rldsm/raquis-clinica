@@ -10,6 +10,7 @@
     connectedCallback() {
       this.render();
       this.bind();
+      this.mountGoogleReviews();
       if (!this.hasAttribute('contained')) {
         this.fullBleed();
         this._resize = () => this.fullBleed();
@@ -134,11 +135,7 @@
           .about-point span{color:#cfc5bf;font-size:.9rem;line-height:1.45}
 
           /* Reviews / team */
-          .trust-cards{display:grid;gap:14px}
-          .review-card{border:1px solid var(--line);border-radius:16px;background:#fff;padding:18px}
-          .review-card .stars{color:#e0a400;font-size:.9rem;letter-spacing:.06em}
-          .review-card p{margin:10px 0 0;color:#4f4945;line-height:1.5;font-size:.92rem}
-          .review-card small{display:block;margin-top:12px;color:var(--muted)}
+          .reviews-frame{min-height:190px;border:1px solid var(--line);border-radius:18px;background:#fff;padding:16px;box-shadow:0 10px 30px rgba(57,39,29,.05)}::slotted([slot="google-reviews"]){display:block;width:100%}.reviews-loading{min-height:150px;display:grid;place-items:center;text-align:center;color:var(--muted);font-size:.9rem}
           .team-grid,.clinic-grid{display:grid;gap:14px}
           .person-card,.clinic-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
           .person-media,.clinic-media{min-height:260px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem}
@@ -312,10 +309,10 @@
                 <h2>Lo que dicen nuestros pacientes</h2>
                 <p>Aquí integraremos reseñas reales de Google y testimonios de pacientes de Raquis.</p>
               </div>
-              <div class="trust-cards">
-                <article class="review-card"><div class="stars">★★★★★</div><p>Espacio para reseña real de Google.</p><small>Paciente Raquis</small></article>
-                <article class="review-card"><div class="stars">★★★★★</div><p>Espacio para reseña real de Google.</p><small>Paciente Raquis</small></article>
-                <article class="review-card"><div class="stars">★★★★★</div><p>Espacio para reseña real de Google.</p><small>Paciente Raquis</small></article>
+              <div class="reviews-frame">
+                <slot name="google-reviews">
+                  <div class="reviews-loading">Cargando reseñas de Google…</div>
+                </slot>
               </div>
             </div>
           </section>
@@ -377,6 +374,23 @@
           </section>
         </main>
       `;
+    }
+
+    mountGoogleReviews() {
+      if (this.querySelector('[data-raquis-google-reviews]')) return;
+
+      const host = document.createElement('div');
+      host.setAttribute('slot', 'google-reviews');
+      host.setAttribute('data-raquis-google-reviews', '');
+      host.style.width = '100%';
+
+      const script = document.createElement('script');
+      script.src = 'https://cdn.trustindex.io/loader.js?cc33fc47993d918046660850d56';
+      script.defer = true;
+      script.async = true;
+
+      host.appendChild(script);
+      this.appendChild(host);
     }
 
     bind() {
