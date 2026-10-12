@@ -251,21 +251,21 @@
             <div class="wrap">
               <div class="section-head center">
                 <p class="kicker">Nuestro modelo de atención</p>
-                <h2>La quiropráctica es la protagonista</h2>
-                <p>Un enfoque manual y conservador, complementado con otras áreas cuando cada caso lo necesita.</p>
+                <h2>Quiropráctica como atención principal</h2>
+                <p>La quiropráctica es el eje de nuestro modelo de atención. Kinesiología y masoterapia pueden complementar el proceso cuando cada caso lo requiere.</p>
               </div>
               <div class="service-grid">
                 <article class="service-card main">
                   <div class="service-media">FOTO QUIROPRÁCTICA</div>
-                  <div class="service-body"><span class="service-tag">ATENCIÓN PRINCIPAL</span><h3>Quiropráctica</h3><p>Evaluación individual, técnicas manuales y ajustes específicos según las necesidades del paciente.</p></div>
+                  <div class="service-body"><span class="service-tag">ATENCIÓN PRINCIPAL</span><h3>Quiropráctica</h3><p>Evaluación individual, técnicas manuales y ajustes específicos según las necesidades de cada paciente.</p></div>
                 </article>
                 <article class="service-card">
                   <div class="service-media">FOTO KINESIOLOGÍA</div>
-                  <div class="service-body"><h3>Kinesiología</h3><p>Puede complementar la recuperación con movilidad, ejercicio terapéutico y terapia manual.</p></div>
+                  <div class="service-body"><h3>Kinesiología</h3><p>Atención complementaria que puede apoyar el proceso con movilidad, ejercicio terapéutico y terapia manual.</p></div>
                 </article>
                 <article class="service-card">
                   <div class="service-media">FOTO MASOTERAPIA</div>
-                  <div class="service-body"><h3>Masoterapia</h3><p>Puede complementar la atención trabajando tensión muscular y bienestar corporal.</p></div>
+                  <div class="service-body"><h3>Masoterapia</h3><p>Atención complementaria orientada a trabajar tensión muscular y bienestar corporal.</p></div>
                 </article>
               </div>
             </div>
