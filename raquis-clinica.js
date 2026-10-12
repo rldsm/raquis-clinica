@@ -258,15 +258,15 @@
           <section class="section alt">
             <div class="wrap process">
               <div class="section-head">
-                <p class="kicker">Cómo funciona la atención</p>
-                <h2>Desde la reserva hasta tu plan de atención</h2>
-                <p>El proceso está pensado para que sepas qué ocurrirá antes de llegar a la clínica.</p>
+                <p class="kicker">Primera sesión</p>
+                <h2>¿Cómo es la primera sesión de quiropráctica?</h2>
+                <p>Dura aproximadamente 30 minutos e incluye una evaluación clínica completa antes de comenzar el tratamiento, si corresponde.</p>
               </div>
               <div class="steps">
-                <div class="step"><div class="step-num">1</div><div><h3>Reserva en Medilink</h3><p>Elige especialidad, profesional, sucursal y horario disponible.</p></div></div>
-                <div class="step"><div class="step-num">2</div><div><h3>Evaluación inicial</h3><p>Revisamos antecedentes, síntomas y movilidad según tu motivo de consulta.</p></div></div>
-                <div class="step"><div class="step-num">3</div><div><h3>Explicamos lo que encontramos</h3><p>Te contamos los hallazgos de la evaluación y los próximos pasos.</p></div></div>
-                <div class="step"><div class="step-num">4</div><div><h3>Definimos un plan</h3><p>Cuando corresponde, definimos un plan de atención acorde a tu caso.</p></div></div>
+                <div class="step"><div class="step-num">1</div><div><h3>Revisamos tu historial clínico</h3><p>Evaluamos antecedentes de salud y posibles contraindicaciones para el tratamiento quiropráctico.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div><h3>Realizamos una evaluación funcional</h3><p>Revisamos movilidad y, según tu caso, realizamos tests ortopédicos, neurológicos u otras evaluaciones pertinentes.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div><h3>Evaluamos tu columna y extremidades</h3><p>Buscamos sensibilidades, restricciones y otros hallazgos relevantes para definir la atención más adecuada.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div><h3>Comenzamos el tratamiento</h3><p>Una vez terminada la evaluación, y si corresponde a tu caso, iniciamos el tratamiento en esa misma sesión.</p></div></div>
               </div>
             </div>
           </section>
