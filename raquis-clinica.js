@@ -148,7 +148,7 @@
             .quick-panel{grid-template-columns:repeat(4,1fr);margin:-72px 28px 0}
             .quick-item{border-bottom:0!important;border-right:1px solid var(--line)!important}.quick-item:last-child{border-right:0!important}
             .first-session-tabs{display:none}
-            .specialty-grid{display:grid;grid-template-columns:repeat(3,1fr)}
+            .specialty-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
             .specialty-card{display:block}
             .process{grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
             .team-grid{grid-auto-flow:initial;grid-auto-columns:auto;grid-template-columns:repeat(2,1fr);overflow:visible;padding:0}
