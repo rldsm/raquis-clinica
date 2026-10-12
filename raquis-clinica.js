@@ -57,7 +57,7 @@
           .wrap{width:min(100% - 28px,1180px);margin:0 auto}
           .kicker{margin:0 0 8px;color:var(--orange);font-size:.74rem;font-weight:850;letter-spacing:.07em;text-transform:uppercase}
           .section{padding:48px 0}
-          .section.alt{background:var(--soft)}
+          .section.alt{background:var(--soft)}#primera-sesion{padding-top:44px;padding-bottom:44px}
           .section-head{max-width:760px;margin-bottom:24px}
           .section-head.center{text-align:center;margin-left:auto;margin-right:auto}
           .section-head h2{margin:0 0 10px;font-size:clamp(2rem,9vw,3.35rem);line-height:1.03;letter-spacing:-.045em}
@@ -96,9 +96,9 @@
           .symptom-card span{position:relative;z-index:1;margin-top:8px;color:var(--muted);font-size:.78rem;line-height:1.4}
 
           /* First visit: no generic cards, more editorial */
-          .first-visit{display:grid;gap:28px}
-          .steps{display:grid;gap:0;border-top:1px solid var(--line)}
-          .step{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:18px 0;border-bottom:1px solid var(--line)}
+          .first-visit{display:grid;gap:22px}
+          .steps{display:grid;gap:0;border-top:1px solid var(--line);align-self:start}
+          .step{display:grid;grid-template-columns:44px 1fr;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
           .step-num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff0e8;color:var(--orange);font-weight:900}
           .step h3{margin:1px 0 4px;font-size:1rem}
           .step p{margin:0;color:var(--muted);font-size:.91rem;line-height:1.48}
@@ -180,7 +180,7 @@
             .hero-content{min-height:580px;padding:64px 64px 138px}
             .hero h1{font-size:4.8rem}
             .section{padding:72px 0}
-            .first-visit{grid-template-columns:.9fr 1.1fr;gap:56px;align-items:start}
+            .first-visit{grid-template-columns:.84fr 1.16fr;gap:38px;align-items:start}
             .about-grid{grid-template-columns:1fr 1fr;gap:52px;align-items:center}
             .team-grid{grid-template-columns:repeat(4,1fr)}
           }
