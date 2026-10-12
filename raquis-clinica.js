@@ -96,7 +96,7 @@
           .specialty-card.primary{border-color:#efc1aa}
           .specialty-tag{display:inline-flex;margin-bottom:10px;padding:5px 9px;border-radius:999px;background:#fff0e8;color:var(--orange);font-size:.71rem;font-weight:850}
 
-          .process{display:grid;gap:26px}
+          .pain-cloud{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 12px;max-width:980px;margin:0 auto}.pain-word{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#4d4642;font-weight:700;line-height:1.1;white-space:nowrap}.pain-word.is-lg{font-size:1.08rem;padding:11px 15px;color:var(--ink)}.pain-word.is-xl{font-size:1.2rem;padding:12px 17px;color:var(--orange);border-color:#efc3ae;background:#fff8f4}.pain-note{max-width:720px;margin:18px auto 0;text-align:center;color:var(--muted);font-size:.88rem;line-height:1.5}.process{display:grid;gap:26px}
           .steps{display:grid;gap:0;border-top:1px solid var(--line)}
           .step{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
           .step-num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff0e8;color:var(--orange);font-weight:900}
@@ -204,6 +204,37 @@
               <div style="display:flex;justify-content:center;margin-top:20px">
                 <a class="btn btn-primary" href="${this.bookingUrl()}">AGENDAR PRIMERA SESIÓN</a>
               </div>
+            </div>
+          </section>
+
+          <section class="section alt">
+            <div class="wrap">
+              <div class="section-head center">
+                <p class="kicker">Motivos de consulta</p>
+                <h2>Dolores y molestias por los que nos consultan</h2>
+                <p>Estas son algunas de las consultas musculoesqueléticas más frecuentes que atendemos en Raquis.</p>
+              </div>
+              <div class="pain-cloud" aria-label="Dolores y molestias frecuentes">
+                <span class="pain-word is-xl">Dolor de espalda</span>
+                <span class="pain-word is-xl">Dolor de cuello</span>
+                <span class="pain-word is-lg">Lumbago</span>
+                <span class="pain-word is-lg">Ciática</span>
+                <span class="pain-word is-lg">Dolor de hombro</span>
+                <span class="pain-word">Dolor de cabeza</span>
+                <span class="pain-word">Cefalea tensional</span>
+                <span class="pain-word">Dolor de rodilla</span>
+                <span class="pain-word">Dolor de cadera</span>
+                <span class="pain-word">Dolor de tobillo</span>
+                <span class="pain-word">Dolor de codo</span>
+                <span class="pain-word">Tendinitis</span>
+                <span class="pain-word">Escoliosis</span>
+                <span class="pain-word">Discopatía</span>
+                <span class="pain-word">Hernia discal</span>
+                <span class="pain-word">Túnel carpiano</span>
+                <span class="pain-word">Esguince de tobillo</span>
+                <span class="pain-word">Rigidez articular</span>
+              </div>
+              <p class="pain-note">La evaluación inicial permite determinar si la quiropráctica corresponde a tu caso o si necesitas otro tipo de atención.</p>
             </div>
           </section>
 
