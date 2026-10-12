@@ -102,8 +102,9 @@
           .step-num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff0e8;color:var(--orange);font-weight:900}
           .step h3{margin:1px 0 4px;font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.91rem;line-height:1.48}
 
-          .team-grid{display:grid;gap:14px}
-          .person-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
+          .team-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(82%,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;overscroll-behavior-inline:contain}
+          .team-grid::-webkit-scrollbar{height:6px}.team-grid::-webkit-scrollbar-thumb{background:#dccbc1;border-radius:999px}
+          .person-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;scroll-snap-align:start}
           .person-media{min-height:260px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem}
           .person-body{padding:18px}.person-body h3{margin:0 0 5px;font-size:1.08rem}.person-body p{margin:0;color:var(--muted);line-height:1.48;font-size:.9rem}
           .person-body .btn{margin-top:14px;width:100%}
@@ -142,7 +143,7 @@
             .quick-item{border-bottom:0!important;border-right:1px solid var(--line)!important}.quick-item:last-child{border-right:0!important}
             .specialty-grid{grid-template-columns:repeat(3,1fr)}
             .process{grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
-            .team-grid{grid-template-columns:repeat(2,1fr)}
+            .team-grid{grid-auto-flow:initial;grid-auto-columns:auto;grid-template-columns:repeat(2,1fr);overflow:visible;padding:0}
             .video-grid{grid-template-columns:repeat(3,1fr)}
             .clinic-grid{grid-template-columns:repeat(2,1fr)}
             .clinic-actions{grid-template-columns:1fr 1fr}
@@ -150,7 +151,7 @@
           @media(min-width:980px){
             .hero{padding-top:38px}.hero-card{min-height:580px}.hero-content{min-height:580px;padding:64px 64px 138px}.hero h1{font-size:4.8rem}
             .section{padding:72px 0}
-            .team-grid{grid-template-columns:repeat(4,1fr)}
+            .team-grid{grid-template-columns:repeat(3,1fr)}
           }
         </style>
 
@@ -224,10 +225,15 @@
               <div class="section-head center">
                 <p class="kicker">Profesionales</p>
                 <h2>Conoce a quienes te van a atender</h2>
-                <p>Mostraremos fotografía real, formación, especialidad y área de atención de cada profesional.</p>
+                <p>Conoce al equipo que realiza las atenciones de quiropráctica en Raquis.</p>
               </div>
               <div class="team-grid">
-                ${[1,2,3,4].map(i => `<article class="person-card"><div class="person-media">FOTO PROFESIONAL ${i}</div><div class="person-body"><h3>Nombre profesional</h3><p>Especialidad · formación principal · área de atención.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ESTE PROFESIONAL</a></div></article>`).join('')}
+                <article class="person-card"><div class="person-media">FOTO ALFREDO DUTILH</div><div class="person-body"><h3>Alfredo Dutilh D.</h3><p>Quiropráctico y Kinesiólogo · Director Clínico.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON ALFREDO</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO CARLOS BUSTOS</div><div class="person-body"><h3>Carlos Bustos U.</h3><p>Quiropráctico y Kinesiólogo · Jefe de Clínica Providencia.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CARLOS</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO CRISTIAN RODRIGUEZ</div><div class="person-body"><h3>Cristian Rodriguez A.</h3><p>Quiropráctico y Kinesiólogo · Jefe de Quiropráctica.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON CRISTIAN</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO FRANK GAETE</div><div class="person-body"><h3>Frank Gaete S.</h3><p>Quiropráctico.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON FRANK</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO PAZ GRIFFEROS</div><div class="person-body"><h3>Paz Grifferos R.</h3><p>Quiropráctica y Kinesióloga.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON PAZ</a></div></article>
+                <article class="person-card"><div class="person-media">FOTO RITA CABALLERO</div><div class="person-body"><h3>Rita Caballero P.</h3><p>Quiropráctico y Kinesiólogo.</p><a class="btn btn-secondary" href="${this.bookingUrl()}">AGENDAR CON RITA</a></div></article>
               </div>
             </div>
           </section>
