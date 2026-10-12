@@ -106,7 +106,7 @@
           .team-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(68%,1fr);gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 10px;overscroll-behavior-inline:contain}
           .team-grid::-webkit-scrollbar{height:6px}.team-grid::-webkit-scrollbar-thumb{background:#dccbc1;border-radius:999px}
           .person-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;scroll-snap-align:start}
-          .person-media{min-height:210px;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem;overflow:hidden}.person-media img{display:block;width:100%;height:100%;min-height:210px;aspect-ratio:4/5;object-fit:cover;object-position:center top}
+          .person-media{aspect-ratio:1/1;background:#f5ebe5;display:grid;place-items:center;text-align:center;color:#917c71;font-size:.8rem;overflow:hidden}.person-media img{display:block;width:100%;height:100%;aspect-ratio:1/1;object-fit:cover;object-position:center top}
           .person-body{padding:14px}.person-body h3{margin:0 0 4px;font-size:1rem}.person-body p{margin:0;color:var(--muted);line-height:1.42;font-size:.84rem}
           .person-body .btn{margin-top:12px;width:100%;min-height:40px;font-size:.76rem}
 
