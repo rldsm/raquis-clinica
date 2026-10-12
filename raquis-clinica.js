@@ -109,9 +109,10 @@
           .person-body{padding:18px}.person-body h3{margin:0 0 5px;font-size:1.08rem}.person-body p{margin:0;color:var(--muted);line-height:1.48;font-size:.9rem}
           .person-body .btn{margin-top:14px;width:100%}
 
-          .video-grid{display:grid;gap:14px}
-          .video-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden}
-          .video-thumb{min-height:360px;background:#f1e7e1;display:grid;place-items:center;text-align:center;color:#907a70;font-size:.8rem;position:relative}
+          .video-grid{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(72%,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px 2px 12px;overscroll-behavior-inline:contain}
+          .video-grid::-webkit-scrollbar{height:6px}.video-grid::-webkit-scrollbar-thumb{background:#dccbc1;border-radius:999px}
+          .video-card{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;scroll-snap-align:start}
+          .video-thumb{aspect-ratio:9/16;min-height:0;background:#f1e7e1;display:grid;place-items:center;text-align:center;color:#907a70;font-size:.8rem;position:relative}
           .play{width:58px;height:58px;border-radius:50%;display:grid;place-items:center;background:var(--orange);color:#fff;font-size:1.2rem;margin:0 auto 10px}
           .video-body{padding:16px}.video-body strong{display:block}.video-body span{display:block;margin-top:4px;color:var(--muted);font-size:.86rem}
 
@@ -144,7 +145,7 @@
             .specialty-grid{grid-template-columns:repeat(3,1fr)}
             .process{grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
             .team-grid{grid-auto-flow:initial;grid-auto-columns:auto;grid-template-columns:repeat(2,1fr);overflow:visible;padding:0}
-            .video-grid{grid-template-columns:repeat(3,1fr)}
+            .video-grid{grid-auto-flow:initial;grid-auto-columns:auto;grid-template-columns:repeat(3,minmax(0,1fr));overflow:visible;padding:0}
             .clinic-grid{grid-template-columns:repeat(2,1fr)}
             .clinic-actions{grid-template-columns:1fr 1fr}
           }
