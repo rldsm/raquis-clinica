@@ -277,7 +277,7 @@
                 </article>
                 <article class="clinic-card">
                   <div class="clinic-media">FOTO PROVIDENCIA</div>
-                  <div class="clinic-body"><h3>Providencia</h3><p>Dr. Manuel Barros Borgoño 71, Of. 806 · Metro Manuel Montt.</p><p>Horario y especialidades: por completar.</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Dr+Manuel+Barros+Borgono+71+Oficina+806+Providencia+Chile" target="_blank" rel="noopener noreferrer">VER EN MAPS</a><a class="btn btn-primary" href="${this.specialtyUrl('providencia')}">AGENDAR AQUÍ</a></div></div>
+                  <div class="clinic-body"><h3>Providencia</h3><p>Dr. Manuel Barros Borgoño 71, Of. 806 · Metro Manuel Montt.</p><p><strong>Horario:</strong><br>Lunes a viernes: 8:30 a 19:30<br>Sábado: 9:00 a 16:00<br>Domingo: cerrado</p><div class="clinic-actions"><a class="btn btn-secondary" href="https://www.google.com/maps/search/?api=1&query=Dr+Manuel+Barros+Borgono+71+Oficina+806+Providencia+Chile" target="_blank" rel="noopener noreferrer">VER EN MAPS</a><a class="btn btn-primary" href="${this.specialtyUrl('providencia')}">AGENDAR AQUÍ</a></div></div>
                 </article>
               </div>
             </div>
