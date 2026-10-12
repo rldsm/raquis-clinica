@@ -96,7 +96,7 @@
           .specialty-card.primary{border-color:#efc1aa}
           .specialty-tag{display:inline-flex;margin-bottom:10px;padding:5px 9px;border-radius:999px;background:#fff0e8;color:var(--orange);font-size:.71rem;font-weight:850}
 
-          .pain-cloud{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:10px 12px;max-width:980px;margin:0 auto}.pain-word{display:inline-flex;align-items:center;justify-content:center;padding:9px 13px;border:1px solid var(--line);border-radius:999px;background:#fff;color:#4d4642;font-weight:700;line-height:1.1;white-space:nowrap}.pain-word.is-lg{font-size:1.08rem;padding:11px 15px;color:var(--ink)}.pain-word.is-xl{font-size:1.2rem;padding:12px 17px;color:var(--orange);border-color:#efc3ae;background:#fff8f4}.pain-note{max-width:720px;margin:18px auto 0;text-align:center;color:var(--muted);font-size:.88rem;line-height:1.5}.process{display:grid;gap:26px}
+          .pain-cloud-wrap{max-width:980px;margin:0 auto;padding:8px 0 0}.pain-cloud{display:flex;flex-wrap:wrap;justify-content:center;align-items:baseline;column-gap:16px;row-gap:8px;text-align:center}.pain-word{display:inline-block;color:#4d4642;font-weight:650;line-height:1;white-space:nowrap;letter-spacing:-.02em}.pain-word.s1{font-size:1rem}.pain-word.s2{font-size:1.15rem}.pain-word.s3{font-size:1.35rem}.pain-word.s4{font-size:1.7rem;font-weight:750}.pain-word.s5{font-size:2.15rem;font-weight:800}.pain-word.accent{color:var(--orange)}.pain-note{max-width:720px;margin:20px auto 0;text-align:center;color:var(--muted);font-size:.88rem;line-height:1.5}@media(min-width:720px){.pain-cloud{column-gap:22px;row-gap:10px}.pain-word.s1{font-size:1.1rem}.pain-word.s2{font-size:1.35rem}.pain-word.s3{font-size:1.7rem}.pain-word.s4{font-size:2.2rem}.pain-word.s5{font-size:3rem}}.process{display:grid;gap:26px}
           .steps{display:grid;gap:0;border-top:1px solid var(--line)}
           .step{display:grid;grid-template-columns:42px 1fr;gap:14px;padding:15px 0;border-bottom:1px solid var(--line)}
           .step-num{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#fff0e8;color:var(--orange);font-weight:900}
@@ -212,27 +212,31 @@
               <div class="section-head center">
                 <p class="kicker">Motivos de consulta</p>
                 <h2>Dolores y molestias por los que nos consultan</h2>
-                <p>Estas son algunas de las consultas musculoesqueléticas más frecuentes que atendemos en Raquis.</p>
+                <p>Una mirada rápida a algunas de las molestias musculoesqueléticas que evaluamos en consulta.</p>
               </div>
-              <div class="pain-cloud" aria-label="Dolores y molestias frecuentes">
-                <span class="pain-word is-xl">Dolor de espalda</span>
-                <span class="pain-word is-xl">Dolor de cuello</span>
-                <span class="pain-word is-lg">Lumbago</span>
-                <span class="pain-word is-lg">Ciática</span>
-                <span class="pain-word is-lg">Dolor de hombro</span>
-                <span class="pain-word">Dolor de cabeza</span>
-                <span class="pain-word">Cefalea tensional</span>
-                <span class="pain-word">Dolor de rodilla</span>
-                <span class="pain-word">Dolor de cadera</span>
-                <span class="pain-word">Dolor de tobillo</span>
-                <span class="pain-word">Dolor de codo</span>
-                <span class="pain-word">Tendinitis</span>
-                <span class="pain-word">Escoliosis</span>
-                <span class="pain-word">Discopatía</span>
-                <span class="pain-word">Hernia discal</span>
-                <span class="pain-word">Túnel carpiano</span>
-                <span class="pain-word">Esguince de tobillo</span>
-                <span class="pain-word">Rigidez articular</span>
+              <div class="pain-cloud-wrap">
+                <div class="pain-cloud" aria-label="Dolores y molestias frecuentes">
+                  <span class="pain-word s2">Cefalea tensional</span>
+                  <span class="pain-word s2">Tendinitis</span>
+                  <span class="pain-word s5 accent">Dolor de espalda</span>
+                  <span class="pain-word s3">Dolor de hombro</span>
+                  <span class="pain-word s2">Bruxismo</span>
+                  <span class="pain-word s1">Rigidez</span>
+                  <span class="pain-word s4 accent">Ciática</span>
+                  <span class="pain-word s1">Postura</span>
+                  <span class="pain-word s2">Movilidad</span>
+                  <span class="pain-word s5">Dolor de cuello</span>
+                  <span class="pain-word s2">Escoliosis</span>
+                  <span class="pain-word s2">Cervicalgia</span>
+                  <span class="pain-word s4 accent">Lumbago</span>
+                  <span class="pain-word s3 accent">Dolor de rodilla</span>
+                  <span class="pain-word s3">Dolor lumbar</span>
+                  <span class="pain-word s2">Hernia discal</span>
+                  <span class="pain-word s2">Dolor de cadera</span>
+                  <span class="pain-word s1">Tobillo</span>
+                  <span class="pain-word s1">Extremidades</span>
+                  <span class="pain-word s2">Túnel carpiano</span>
+                </div>
               </div>
               <p class="pain-note">La evaluación inicial permite determinar si la quiropráctica corresponde a tu caso o si necesitas otro tipo de atención.</p>
             </div>
