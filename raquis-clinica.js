@@ -89,10 +89,10 @@
 
           /* Symptoms as visual categories */
           .symptom-scroll{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-          .symptom-card{min-height:118px;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-end;padding:16px;position:relative}
+          .symptom-card{min-height:148px;border:1px solid var(--line);border-radius:16px;background:#fff;overflow:hidden;display:flex;flex-direction:column;justify-content:flex-start;padding:22px 18px;position:relative}
           .symptom-card:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,#fbf2ec 0%,#fff 70%)}
-          .symptom-card strong{position:relative;z-index:1;font-size:1rem}
-          .symptom-card span{position:relative;z-index:1;margin-top:4px;color:var(--muted);font-size:.78rem}
+          .symptom-card strong{position:relative;z-index:1;display:block;min-height:2.45em;font-size:1rem;line-height:1.22}
+          .symptom-card span{position:relative;z-index:1;margin-top:8px;color:var(--muted);font-size:.78rem;line-height:1.4}
 
           /* First visit: no generic cards, more editorial */
           .first-visit{display:grid;gap:28px}
